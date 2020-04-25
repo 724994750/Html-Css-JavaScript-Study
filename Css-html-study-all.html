@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弟弟行为</title>
+    <style type="text/css">
+        .div1{
+            text-align: center; /*水平居中*/
+        }
+        .img1{
+            /*vertical-align: middle; !*垂直居中*!*/
+            margin-top: 150px;
+            width: 335px;
+            height: 335px;
+        }
+        html:hover .img1{
+            animation-name: img1;
+            animation-delay: 500ms;
+            animation-duration: 1s;
+            animation-fill-mode: forwards; /*动画最后停止不复原*/
+        }
+        @keyframes img1 {
+            to{
+                width: 100px;
+                height: 100px;
+                margin-top: 0px;
+
+            }
+        }
+        .p1{
+            font-family: "Adobe 繁黑體 Std B";
+            font-size: 80px;
+            text-shadow: 1px 1px 10px black;
+            opacity: 1; /*不透明度*/
+        }
+        html:hover .p1{
+            font-family: "Adobe 繁黑體 Std B";
+            font-size: 20px;
+            text-shadow: 1px 1px 10px black;
+            transition-delay: 500ms;
+            transition-duration: 1s;
+            opacity: 0;
+
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="div1">
+    <img src="http://img.bq233.com/kanqq/pic/upload/2018/1127/1543309260618595.jpg" class="img1">
+    <p class="p1">你个臭弟弟</p>
+</div><!--该标签在网页排版中非常重要-->
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建动画</title>
+    <style type="text/css">
+        .class1{
+            width: 100px;
+            height: 100px;
+            background-color: #5f58ff;
+        }
+        .class1:hover{
+            animation-duration: 1s;
+            animation-delay: 200ms;
+            animation-name: name1; /*动画命名*/
+            animation-iteration-count: infinite ; /*动画循环次数*/
+            animation-direction: alternate; /*动画反向*/
+        }
+        @keyframes name1 {
+            from{
+                width: 100px;
+                height: 100px;
+                background-color: #5f58ff;
+
+            }
+            50%{
+                width: 150px;
+                height: 150px;
+                background-color: aliceblue;
+            }
+            to{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+<p class="class1"></p>
+
+</body>
+</html>

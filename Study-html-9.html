@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片插入及音频显示</title>
+</head>
+<body>
+
+<a href="https://space.bilibili.com/382371552/favlist" target="_blank"><!--    可以给图片超链接-->
+    <img src=".idea/mmexport1574056069186.jpg" width="128px" alt="下载"><!--alt为该图片找不到的时候提示作用-->
+</a>
+
+<form>
+    <input type="image" src=".idea/mmexport1574056069186.jpg">
+</form>
+
+
+<img src=".idea/mmexport1574056069186.jpg" usemap="#map1"  ><!--alt为该图片找不到的时候提示作用-->
+<map name="map1">
+    <area href="https://www.bilibili.com" shape="rect" coords="3,3,386,486" target="_blank"><!--    coords里的坐标由左上点到右下点决定，可以由/form/input来确定坐标点-->
+    <area href="http://www.hebeea.edu.cn" shape="rect" coords="1,1,1,1" target="_blank"><!--    shape有4种，coords和其配套使用，   circle圆形区域由圆心坐标和半径决定，poly代表多边形（至少六个）带入每个点的坐标-->
+
+</map>
+
+
+</body>
+</html>

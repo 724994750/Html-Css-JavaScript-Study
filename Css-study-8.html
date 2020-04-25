@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>创建文本过度</title>
+    <style type="text/css">
+        .class1{
+            width: 100px;
+            height: 100px;
+            background-color: #5f58ff;
+        }
+        .class1:hover{
+            width: 200px;
+            height: 200px;
+            background-color: #ff2edf;
+            transition-delay: 150ms; /*变化延时*/
+            transition-duration: 500ms; /*设置缓慢变化时间*/
+            /*transition-property: background-color; !*只有该元素内部元素才可以缓慢变化*!*/
+            transition-timing-function: ease-in-out;/*变化方式*/
+
+        }
+    </style>
+</head>
+<body>
+<p class="class1"></p>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标触碰弹窗</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 100px;
+            background: beige;
+            border: 1px solid black;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<input type="button"  value="按钮" onclick="alert('成功')">
+<br>
+
+<input type="checkbox" onmouseover="div1.style.display='block';" onmouseout="div1.style.display='none';" >
+
+<!--规范化兼容-->
+<input type="checkbox" onmouseover="document.getElementById('div1').style.display='block';" onmouseout="document.getElementById('div1').style.display='none';" >
+<div id="div1">
+    为了您的信息安全。。。。
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>script函数调用初步</title>
+    <style type="text/css">
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: #ff2edf;
+        }
+    </style>
+
+    <script>
+        function tored() {
+            document.getElementById('div1').style.width='300px';
+            document.getElementById('div1').style.height='300px';
+            document.getElementById('div1').style.backgroundColor='red';
+        }
+        function tofen() {
+            document.getElementById('div1').style.width='100px';
+            document.getElementById('div1').style.height='100px';
+            document.getElementById('div1').style.backgroundColor='#ff2edf';
+        }
+
+    </script>
+</head>
+
+<body>
+<div id="div1" onmouseover="tored()" onmouseout="tofen()"></div>
+
+</body>
+
+</html>

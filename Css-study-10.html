@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css使用变换</title>
+    <style type="text/css">
+        .class1{
+            width: 100px;
+            height: 100px;
+            background-color: #5f58ff;
+        }
+        .class1:hover{
+            width: 100px;
+            height: 100px;
+            background-color: #5f58ff;
+            transform: rotate(45deg); /*旋转变换*/
+            transform: scale(1.5); /*放大缩小变换*/
+            transform: scaleX(1.5); /*单边变换*/
+            transform-origin: top right; /*定义变换（旋转）基准点，也可以直接输入40px 20px*/
+        }
+    </style>
+</head>
+
+<body>
+<p class="class1"></p>
+</body>
+</html>

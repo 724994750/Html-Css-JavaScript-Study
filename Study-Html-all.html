@@ -1,0 +1,179 @@
+<!DOCTYPE html><!--让浏览器得知自己要处理的内容是html-->
+
+<html lang="en"><!--文档中html的开始，lang="en"表示设置语言为English-->
+
+<head><!--    提供有关文档和标注信息-->
+
+    <meta charset="UTF-8"><!--    编码-->
+    <title>弟弟</title><!--    标题-->
+</head>
+
+<body>
+<!--1.超链接部分-->
+<a href="sp1.mp4"> 超链接到本地1 </a><!--超链接到本地样本-->
+<a href="https://www.bilibili.com/video/av5862916?p=4" >  超链接到外部1 </a>>    <!--超链接语句--超链接外部语句-->
+<a href="sp1.mp4" target="_blank"> 超链接到本地/blank </a><!--超链接到本地样本,black代表新建一个窗口-->
+<a href="sp1.mp4" target="_self"> 超链接到本地/self(默认) </a><!--超链接到本地样本，self默认替换掉原来的窗口-->
+
+<!--2.文本部分-->
+<!--粗体-->
+<b>粗体</b>
+<!--斜体-->
+<em>斜体</em>
+<!--下划线-->
+<u>下划线</u>
+<!--中杠线-->
+<s>中杠线</s>
+<!--综合使用-->
+中央处理器<b>（CPU，英语：Central Processing Unit / Processor）</b>，是<em>电子计算机的主要设备之一</em>>，<a href="https://www.bilibili.com/video/av5862916?p=4" > 电脑中的核心配件</a>。其功能主要是解释计算机指令以及处理计算机软件中的数据。电脑中所有操作都由CPU负责读取指令，对指令译码并执行指令的核心部件。
+
+<!--3.表格部分-->
+<table border="1px"><!--    创建单元格1像素-->
+    <!--    表头和表脚可以用<thead></thead>和<tfoot></tfoot>-->
+    <tr><!--        创建行-->
+        <th>1.1</th><!--        创建该行中的几列,内容加粗并且居中-->
+        <th>1.2</th>
+        <th>1.3</th>
+    </tr>
+    <tr><!--        创建行-->
+        <td>1.1</td><!--        创建该行中的几列-->
+        <td>1.2</td>
+        <td>1.3</td>
+    </tr>
+    <tr><!--        创建行-->
+        <td>2.1</td><!--        创建该行中的几列-->
+        <td>2.2</td>
+        <td>2.3</td>
+    </tr>
+</table>
+<br><!--换行符-->
+<table border="1px" >
+    <tr><!--        创建行-->
+        <th rowspan="2">1.1</th><!--        创建该行中的几列,内容加粗并且居中-->
+        <th>1.2</th>
+        <th>1.3</th>
+    </tr>
+    <tr><!--        创建行-->
+        <td colspan="2">1.2</td>
+        合并单元格
+    </tr>
+    <tr><!--        创建行-->
+        <td>2.1</td><!--        创建该行中的几列-->
+        <td>2.2</td>
+        <td>2.3</td>
+    </tr>
+
+</table>
+
+<!--4.创建列表-->
+<!--有序列表-->
+<ol><!--    创建有序列表（升序）-->
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+</ol>
+<ol reversed><!--    创建有序列表（降序）-->
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+</ol>
+<ol type="a"><!--    创建有序列表（改变排序字母）-->
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+</ol>
+<!--综合使用-->
+<ol>
+    <li>1</li>
+    <ol type="a">
+        <li>1</li>
+        <li>2</li>
+    </ol>
+</ol>
+<!--无序列表-->
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+<!--5.表单-->
+<form>
+    <input type="text"><!--    单行文本框-->
+    <input type="text" value="占位显示"><!--    占位符-->
+    <input type="text" placeholder="不占位显示"><!--    不占位显示-->
+    <input type="text" placeholder="不占位显示" maxlength="8"><!--    设置最大输入长度-->
+    <input type="text" placeholder="不占位显示" size="50"><!--    设置文本框长度-->
+    <input type="text" value="占位显示" readonly><!--    只读-->
+    <input type="password" placeholder="密码"><!--    加密输入-->
+
+    <textarea cols="10" rows="10">11111111111111111111111111111</textarea><!--    多行文本框-->
+</form>
+<form>
+    <input type="button" value="按钮"><!--    按钮-->
+    <button>按钮</button><!--用于js合作并作为绑定事件-->
+    <input type="submit" value="按钮"><!--    提交表单，用于php-->
+</form>
+<form>
+    <input type="range" min="-1000" max="1000"><!--  数字  可滑动拖杆-->
+    <input type="range" min="-1000" max="1000" value="-100"><!--    设置起始位置-->
+    <input type="number" max="100" min="-100" value="0"><!--    数字输入-->
+    <input type="checkbox" >"选择"<!--    点选框-->
+    <!--    多选点选,nanme为其分类，checked表示最开始选中一个-->
+    <input type="radio" name="a" checked>1
+    <input type="radio" name="a">2
+    <input type="radio" name="a">3
+</form>
+<br>
+你最喜欢
+<select><!--    选择框，只能选-->
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</select>
+<input type="text" list="1"><!--可选择可输入表单-->
+<datalist id="1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</datalist><!--datelist必须搭配着文本框使用-->
+<form>
+    <input type="tel"><!--    有效电话号码-->
+    <input type="url"><!--    有效网址-->
+    <input type="email"><!--    有效电子邮箱-->
+    <input type="date"><!--    获取时间-->
+    <input type="color"><!--    获取颜色-->
+    <input type="search"><!--    获取搜索文本框-->
+    <input type="hidden"><!--    隐藏w-->
+    <input type="image" src="1.jpg" width="80"><!--    图片按钮-->
+    <input type="file"><!--    上传文件（一个）-->
+    <input type="file" multiple><!--    上传多个文件-->
+</form>
+
+<!--6.图片插入及分区响应-->
+<a href="https://space.bilibili.com/382371552/favlist" target="_blank"><!--    可以给图片超链接-->
+<img src=".idea/mmexport1574056069186.jpg" width="128px" alt="下载"><!--alt为该图片找不到的时候提示作用-->
+</a>
+<form>
+    <input type="image" src=".idea/mmexport1574056069186.jpg">
+</form>
+<img src=".idea/mmexport1574056069186.jpg" usemap="#map1"  ><!--alt为该图片找不到的时候提示作用-->
+<map name="map1">
+    <area href="https://www.bilibili.com" shape="rect" coords="3,3,386,486" target="_blank"><!--    coords里的坐标由左上点到右下点决定，可以由/form/input来确定坐标点-->
+    <area href="http://www.hebeea.edu.cn" shape="rect" coords="1,1,1,1" target="_blank"><!--    shape有4种，coords和其配套使用，   circle圆形区域由圆心坐标和半径决定，poly代表多边形（至少六个）带入每个点的坐标-->
+
+</map>
+
+<!--7.视频及音频的插入-->
+<!--<video src="sp1.mp4" height="500px" muted="muted" autoplay></video>&lt;!&ndash;网页完成后自动播放&ndash;&gt;-->
+<!--<video src="sp1.mp4" height="500px" controls> </video>-->
+<video src="sp1.mp4" height="500px" controls preload="auto" poster=".idea/mmexport1574056069186.jpg"> <!--自动加载,poster相当于最开始加载一张封面-->
+    <source src="sp1.mp4" type="video/mp4">
+<!--    <source src="sp1.ogv" type="video/ogg">-->
+</video>
+
+
+</body>
+
+
+</html><!--文档中html部分结束-->

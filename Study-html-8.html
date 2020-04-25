@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单及选择框</title>
+</head>
+<body>
+你最喜欢
+<select><!--    选择框，只能选-->
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</select>
+<br>
+
+<input type="text" list="1"><!--可选择可输入表单-->
+<datalist id="1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</datalist><!--datelist必须搭配着文本框使用-->
+<br>
+
+<form>
+    <input type="tel"><!--    有效电话号码-->
+    <input type="url"><!--    有效网址-->
+    <input type="email"><!--    有效电子邮箱-->
+    <input type="date"><!--    获取时间-->
+    <input type="color"><!--    获取颜色-->
+    <input type="search"><!--    获取搜索文本框-->
+    <br>
+    --------------------------------------------------------------
+    <br>
+    <input type="hidden"><!--    隐藏-->
+    <input type="image" src=".idea/mmexport1574056069186.jpg" width="80"><!--    图片按钮-->
+    <input type="file"><!--    上传文件（一个）-->
+    <input type="file" multiple><!--    上传多个文件-->
+</form>
+
+
+</body>
+</html>

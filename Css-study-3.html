@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建css选择器</title>
+    <style type="text/css">
+        *{
+            font-size: 20px;
+            color: #ff5340;
+        }  /*选择全部*/
+
+        .class1{
+            font-size: 30px;
+            color: #5f58ff;
+        }  /*选择一类*/
+
+        #id1{
+            font-size: 40px;
+            color: aqua;
+        }  /*选择一个id（通常只用于一个）*/
+
+        [href]{
+            font-size: 50px;
+            color: blueviolet;
+        }  /*根据属性选择元素*/
+
+        a {
+            font-size: 60px;
+            color: #bfd3ff;
+        }  /*根据类型选择*/
+
+        p:hover{
+            font-size: 80px;
+            color: chocolate;
+        }  /*鼠标移动于此的变化*/
+
+    </style>
+</head>
+
+<body>
+<a class="class1">一号</a>
+<a class="class1">二号</a>
+<a id="id1">三号</a>
+<a href="Css-study-1.html">四号</a>
+<a href="Css-study-1.html">五号</a>
+<a>六号</a>
+<a>七号</a>
+<p>八号</p>
+
+
+</body>
+</html>

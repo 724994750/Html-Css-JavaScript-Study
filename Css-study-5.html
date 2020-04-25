@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css创建边框和背景2</title>
+    <style type="text/css">
+        .class1{
+            background-image: url("backgrand.jpg"); /*自动平铺*/
+            /*background-repeat: no-repeat; !*重复方式*!*/
+            background-size: cover; /*默认是auto自动平铺,cover是自适应自动缩放比例*/
+            background-attachment: fixed; /*固定方式*/
+        }
+        .class2{
+            width: 50px;
+            height: 50px;
+            border: blue 1px solid;
+            border-radius: 10px/10px; /*设置圆角*/
+        }
+
+    </style>
+</head>
+
+<body class="class1">
+<p class="class2">lalalalalalaa</p>
+
+</body>
+</html>
